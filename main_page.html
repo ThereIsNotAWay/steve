@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Steve For Presidency
+    </title>
+    <link rel="stylesheet" href="styler.css"/>
+    <script defer src="scripter.js"></script>
+  </head>
+  <body >
+    <div>
+      <header>
+        <div style="margin-left: 40px;">
+          <div>
+            <div id="homepage">
+              <a href="main_page.html" style="text-decoration: none;">
+                <img src="https://i.pinimg.com/originals/85/78/bf/8578bfd439ef6ee41e103ae82b561986.png" style="width: 30x; height: 30px; position: relative; bottom: -9px;"> 
+              </a>
+            </div>
+            <div class="box-outline">
+              <a href="steve_background.html" style="text-decoration: none;">
+                About
+              </a>
+            </div>  
+            <div class="box-outline">
+              <a href="steve_veteran.html" style="text-decoration: none;">
+                Veteran
+              </a>
+            </div>
+            <div class="box-outline">
+              <a href="steve_platform_issues.html" style="text-decoration: none;">
+                Issues
+              </a>
+            </div>
+            <div style="display: inline-block; margin-left: 55%; color: whitesmoke;" id="vote_counter">
+            </div>
+          </div>  
+        </div>
+      </header>
+    </div>
+    <div class="main_container">
+      <section id="first_parter">
+        <div style="height: 115vh; width: 100%;">
+          <h1 style="position: relative; top: 35%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 100px; text-align: center;">
+            Steve
+          </h1>
+          <div id="image_buttons" style="position:relative; top: 70%; left: 50%; transform: translate(-50%, -50%);">
+            <button class="front_buttons hidden-left" onclick="updateVotes(1)">
+              Vote
+            </button>
+            <button class="front_buttons hidden-right" onclick="targetPage('statistics')">
+              Go To Statistics
+            </button>
+          </div> 
+          <button class="front_buttons hidden-right" id="down_vote" onclick="updateVotes(-1)">
+            Down Vote
+          </button>
+        </div>
+      </section>
+      <section class="idk" style="background-color:rgb(0, 0, 0, .87);">
+        <h2 class="hidden-left" style="margin-bottom: 200px;">
+          A New Beginning
+        </h2>
+        <div>
+          <div id="sec-box1" class="hidden-left">
+            <video width="400px" height="100%" controls>
+              <source src="videos/grave rain with thunder.mp4" type="video/mp4">
+            </video>
+            <div class="hidden-left" style="padding: 20px; width: 500px; height: fit-content; text-align: center;">
+              <h>
+                Veterans
+              </h>
+              <p style="padding-top: 50px">
+                Our nation's fallen veterans will not be forgotten. 
+                The valiant efforts of those through the dark time will be remembered.
+                <br>(Credit to some tree for background of video)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div id="sec-box2" class="hidden-right">
+            <div class="hidden-right" style="padding: 20px; width: 500px; height: fit-content; text-align: center;">
+              <h>
+                Weapons
+              </h>
+              <p style="padding-top: 50px;">
+                In times of peace, there is no need for such arms, but in our nation's darkest times, such arms will be used in preparation.
+              </p>
+            </div>
+            <img src="videos/steve's battle stance.gif" style="width: 400px; height: 250px;"class="hidden-right">
+          </div>
+        </div>
+      </section>
+      <section class="idk" style="width: 100%; height: 800px; background-color: rgba(0, 0, 0, 0.865);">
+        <div>
+          <div style="text-align: center; color: whitesmoke; margin-bottom: 100px;">
+            <h1 class="hidden-left" style="margin-bottom: 10px;">
+              Fought in 2nd Knights Conquest
+            </h1>
+            <img src="pictures/Knights.png" class="hidden-left" style="width: 900px; height: 500px; border-style: solid; border-color: black;">
+          </div>
+          <h1 style="text-align: center; color: whitesmoke; margin-bottom: 10px;">
+            Mysterious Entities Fought
+          </h1>
+        </div>
+        <div id="slideshow">
+          <div class="slideshowImage fade">
+            <img src="pictures/Looking Glass Knight.png" style="height: 500px; width: 1000px;">
+            <div class="image_captions">Looking Glass Knight</div>
+          </div>
+          <div class="slideshowImage fade">
+            <img src="pictures/Abyss Watcher Artorias.png" style="height: 500px; width: 1000px;">
+            <div class="image_captions">Remnant Abyss Watcher Artorias</div>
+          </div>
+          <div class="slideshowImage fade" >
+            <img src="pictures/Ignis.png" style="height: 500px; width: 1000px;">
+            <div class="image_captions">Champion Ignis</div>
+          </div>
+          <div class="slideshowImage fade">
+            <img src="pictures/Ender Guardian.png" style="height: 500px; width: 1000px;">
+            <div class="image_captions">Ancient Ender Guardian</div>
+          </div>
+          <div style="position:absolute; bottom: 5px; left: 50%; transform: translate(-50%, -50%);">
+            <button onclick="indexChange(-1)" class="slide_button" >
+              <--
+            </button>
+            <button onclick="indexChange(1)" class="slide_button">
+              -->
+            </button>
+          </div>
+            
+        </div>
+        
+      </section>
+    </div>
+  </body>
+</html>
+
