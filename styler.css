@@ -166,7 +166,7 @@ h2 {
 	width: 100%;
 	min-height: 115vh;
 	height: fit-content;
-	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.9)), url('videos/clip\ 1.gif');
+	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.9)), url('the\ one.gif');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
