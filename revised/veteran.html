@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steve's Veteran History</title>
+  <link rel="shortcut icon" type="x-icon" href="../legacy/pictures/steve.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+  <noscript>
+    <style>
+      .hidden-left {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 1s;
+      }
+      
+      .hidden-right {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 1s;
+      }
+      
+      .hidden-popup {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 1s;
+      }
+    </style>
+    
+  </noscript>
+</head>
+<body>
+  <header>
+    <div class="header-links">
+      <div class="steve-icon"><a href="../index.html"><img src="../legacy/pictures/steve.jpg" width="35px" height="35px"></a></div>
+      <nav>
+        <div class="box-outline"><a href="index.html">Home</a></div>
+        <div class="box-outline"><a href="background.html">About</a></div>
+        <div class="box-outline"><a href="veteran.html">Veteran</a></div>
+        <div class="box-outline"><a href="platform-issues.html">Issues</a></div>
+      </nav>
+      <div class="flex-column center-all" id="nav-icon" onclick="showNavLinks('block')">
+        <hr class="semi-large-border-radius nav-block">
+        <hr class="semi-large-border-radius nav-block">
+        <hr class="semi-large-border-radius nav-block">
+      </div>
+    </div>
+    <div id="nav-screen">
+      <div class="flex-column nav-screen-links-container">
+        <div class="flex-horizontal" style="width: 100%;">
+          <div style="display: flex; flex: 1;">
+            <a href="../index.html"><img src="../legacy/pictures/steve.jpg" width="50px" height="50px"></a>
+          </div>
+          <div onclick="showNavLinks('none')" >Close</div>
+        </div>
+        <div><a href="index.html">Home</a></div>
+        <div><a href="background.html">About</a></div>
+        <div><a href="veteran.html">Veteran</a></div>
+        <div><a href="platform-issues.html">Issues</a></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="screen-section center-all">
+      <div class="flex-column" style="width: 100%; display: flex; gap: 5rem;">
+        <div class="headers center-all">
+          <h1>Main War</h1>
+        </div>
+        <div class="center-all flex-column" style="width: 100%;">
+          <div class="text-image flex-horizontal flex-wrap center-all">
+            <div class="video">
+              <iframe class="hidden-left" width="100%" height="100%" src="https://www.youtube.com/embed/YnxH7nrmxKc?autoplay=1&mute=1" title="fighting knights" frameborder="0" allow="accelerometer;  no-b autoplay; modestbranding; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+              </iframe>
+            </div>
+            <div class="text hidden-left">
+              <div><h2>2nd Knights Conquest</h2></div>
+              <div>
+                <p>
+                  Initially dragged into the war without wanting to participate. Soon it turned 
+                  into a nightmare and someone had to step up and lead the military to victory. Does not like war. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="center-all">
+      <div class="center-all">
+        <div class="headers-margin">
+          <h1>Main Known Enemies</h1>
+        </div>
+        <div class="column-container flex-horizontal flex-wrap">
+          <div class="column top-bottom">
+            <div class="video">
+              <iframe class="hidden-left" width="100%" height="100%" src="https://www.youtube.com/embed/zj34CI2lpFE" title="Looking Glass Knight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+              </iframe>
+            </div>
+            <div class="text hidden-left">
+              <h2>Looking Glass Knight</h2>
+              <p>The Looking Glass Knight, also known as the Mirror Knight, was spotted in the Lost Cities in the 
+                Far Land Plains. After arriving in the desolated and destroyed city, the conflict began. The 
+                Looking Glass Knight's attacks were punishing but in the end was defeated. 
+              </p>
+            </div>
+          </div>
+          <div class="column top-bottom">
+            <div class="video">
+              <iframe class="hidden-right" width="100%" height="100%" src="https://www.youtube.com/embed/ZPszQ9Z44ew" title="Abyss Watcher Artorias" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+              </iframe>
+            </div>
+            <div class="text hidden-right">
+              <h2>Remnant Abyss Watcher Artorias</h2>
+              <p>
+                Sir Artorias, The Abyss Watcher was the forefront Abyss Watcher. Found in the Nether Wastes 
+                presumably already corrupted, Artorias engaged in combat. After an intense battle, an 
+                advantage was risen and Artorias was defeated, casted away back into the Abyss. 
+              </p>
+            </div>
+          </div>
+          <div class="column top-bottom">
+            <div class="video">
+              <iframe class="hidden-left" width="100%" height="100%" src="https://www.youtube.com/embed/edr0-faCV38" title="Ignis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+              </iframe>
+            </div>
+            <div class="text hidden-left">
+              <h2>Champion Ignis</h2>
+              <p>Ignis, once a champion of the Nether region. Found at the ruined colloseum, roaming around 
+                the once famed location. Ignis was a formidable warrior, but in the end there was no purpose left. 
+              </p>
+            </div>
+            
+          </div>
+          <div class="column top-bottom">
+            <div class="video">
+              <iframe class="hidden-right" width="100%" height="100%" src="https://www.youtube.com/embed/DHiAq6t4Zls" title="Ender Guardian" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+              </iframe>
+            </div>
+            <div class="text hidden-right">
+              <h2>Ancient Ender Guardian</h2>
+              <p>
+                The Ender Guardian, the protector of the End region. Found at the citadel, laying dormant, only 
+                to be awoken. The protector fell to the ground as it once stood, defeated by the enemy it once 
+                sought to destroy. 
+              </p>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

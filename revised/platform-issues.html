@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steve's Platform Issues</title>
+  <link rel="shortcut icon" type="x-icon" href="../legacy/pictures/steve.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+  <noscript>
+    <style>
+      .hidden-left {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 1s;
+      }
+      
+      .hidden-right {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 1s;
+      }
+      
+      .hidden-popup {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 1s;
+      }
+    </style>
+    
+  </noscript>
+</head>
+<body>
+  <header>
+    <div class="header-links">
+      <div class="steve-icon"><a href="../index.html"><img src="../legacy/pictures/steve.jpg" width="35px" height="35px"></a></div>
+      <nav>
+        <div class="box-outline"><a href="index.html">Home</a></div>
+        <div class="box-outline"><a href="background.html">About</a></div>
+        <div class="box-outline"><a href="veteran.html">Veteran</a></div>
+        <div class="box-outline"><a href="platform-issues.html">Issues</a></div>
+      </nav>
+      <div class="flex-column center-all" id="nav-icon" onclick="showNavLinks('block')">
+        <hr class="semi-large-border-radius nav-block">
+        <hr class="semi-large-border-radius nav-block">
+        <hr class="semi-large-border-radius nav-block">
+      </div>
+    </div>
+    <div id="nav-screen">
+      <div class="flex-column nav-screen-links-container">
+        <div class="flex-horizontal" style="width: 100%;">
+          <div style="display: flex; flex: 1;">
+            <a href="../index.html"><img src="../legacy/pictures/steve.jpg" width="50px" height="50px"></a>
+          </div>
+          <div onclick="showNavLinks('none')" >Close</div>
+        </div>
+        <div><a href="index.html">Home</a></div>
+        <div><a href="background.html">About</a></div>
+        <div><a href="veteran.html">Veteran</a></div>
+        <div><a href="platform-issues.html">Issues</a></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="center-all section-top-offset">
+      <div class="center-all">
+        <div class="headers-margin"><h1>Campaign</h1></div>
+        <div class="column-container flex-horizontal flex-wrap">
+          <div class="column bottom-top smaller hidden-left">
+            <div class="text">
+              <h2>Slogan</h2>
+              <p>"Better to be a warrior in a garden, than a gardener in a war"
+                - Miyamoto Musashi (suggestion and fits theme) </p>
+            </div>
+            <div class="image center-all">
+              <img src="../legacy/pictures/samurai.png" width="275px" height="375px">
+            </div>
+          </div>
+           <div class="column bottom-top smaller hidden-right">
+            <div class="text">
+              <h2>Symbol</h2>
+              <p>(Credit to Younus Al Jaberi) </p>
+            </div>
+            <div class="image center-all">
+              <img src="../legacy/pictures/symbol.png" width="100%" height="100%">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="center-all">
+      <div class="center-all">
+        <div class="headers-margin"><h1>Platform</h1></div>
+        <div class="column-container flex-horizontal flex-wrap">
+          <div class="column smaller middle hidden-left">
+            <div class="text">
+              <h2>Issue 1: Veterans</h2>
+            </div>
+            <div class="image center-all">
+              <img src="../legacy/pictures/knights 2.png" width="100%" height="100%">
+            </div>
+            <div class="text">
+             
+              <p>The nation's great veterans fought with valor. They are bestowed upon high honors for 
+                their bravery in the darkest of times. 
+              </p>
+            </div>
+          </div>
+           <div class="column smaller middle hidden-right">
+            <div class="text">
+                <h2>Issue 2: Weapons</h2>
+            </div>
+            <div class="image center-all">
+              <img src="../legacy/pictures/arms.png" width="100%" height="100%">
+            </div>
+            <div class="text">
+              <p>
+                In times of peace, weapons are rarely ever permitted of use. Weapons are dangerous, war 
+                is bloody, only in the darkest of time will the use of weapons be permitted.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="center-all">
+      <div class="text-image-vertical center-all">
+        <div class="text hidden-popup">
+          <h1>Mysterious Disappearance, Case: Sir Technoblade</h1>
+          <p>A once fabled duelist and veteran, hero of 1st Knights Conquest and Great Potato War. Sir Technoblade was 
+            regarded highly upon amongst his pears as one of the best duelist and great character.
+          </p>
+        </div>
+        <div class="image hidden-popup">
+          <img src="../legacy/pictures/Technoblade.jpg" width="100%" height="100%"> 
+        </div>
+      </div>
+    </section>
+    <section class="center-all">
+      <div class="text-image flex-horizontal flex-wrap center-all">
+        <div class="text hidden-left">
+          <div>
+            <h2>Desolate Cabin</h2>  
+          </div>
+          <div>
+            <p>
+              His place of solitude lays dormat as even his legendary horse, Carl is nowhere to be seen either.
+              He remains a legend for his everlasting contributions.
+            </p>
+          </div>
+          
+        </div>
+        <div class="image hidden-left">
+          <img src="../legacy/pictures/cabin.png" width="100%" height="100%">
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

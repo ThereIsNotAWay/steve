@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funding Statistics</title>
+  <link rel="shortcut icon" type="x-icon" href="../legacy/pictures/steve.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+  <noscript>
+    <style>
+      .hidden-left {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 1s;
+      }
+      
+      .hidden-right {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 1s;
+      }
+      
+      .hidden-popup {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 1s;
+      }
+    </style>
+    
+  </noscript>
+</head>
+<body>
+  <header>
+    <div class="header-links">
+      <div class="steve-icon"><a href="../index.html"><img src="../legacy/pictures/steve.jpg" width="35px" height="35px"></a></div>
+      <nav>
+        <div class="box-outline"><a href="index.html">Home</a></div>
+        <div class="box-outline"><a href="background.html">About</a></div>
+        <div class="box-outline"><a href="veteran.html">Veteran</a></div>
+        <div class="box-outline"><a href="platform-issues.html">Issues</a></div>
+      </nav>
+      <div class="flex-column center-all" id="nav-icon" onclick="showNavLinks('block')">
+        <hr class="semi-large-border-radius nav-block">
+        <hr class="semi-large-border-radius nav-block">
+        <hr class="semi-large-border-radius nav-block">
+      </div>
+    </div>
+    <div id="nav-screen">
+      <div class="flex-column nav-screen-links-container">
+        <div class="flex-horizontal" style="width: 100%;">
+          <div style="display: flex; flex: 1;">
+            <a href="../index.html"><img src="../legacy/pictures/steve.jpg" width="50px" height="50px"></a>
+          </div>
+          <div onclick="showNavLinks('none')" >Close</div>
+        </div>
+        <div><a href="index.html">Home</a></div>
+        <div><a href="background.html">About</a></div>
+        <div><a href="veteran.html">Veteran</a></div>
+        <div><a href="platform-issues.html">Issues</a></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="center-all screen-section">
+      <div class="center-all text-image-vertical">
+        <div class="text">
+          <h1>Funding Sources</h1>
+          <p>Self-Financing: 0.5% (no diamonds sad)</p>
+          <p> Small Individual Contributions: 52.4%</p>
+          <p> Large Individual Contributions: 47.1%</p>
+          <p>PAC Funds: 0%</p>
+        </div>
+        <div class="image">
+          <img src="../legacy/pictures/Funding Source.png" width="100%" height="100%">
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

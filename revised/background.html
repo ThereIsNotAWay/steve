@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steve Background</title>
+  <link rel="shortcut icon" type="x-icon" href="../legacy/pictures/steve.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+  <noscript>
+    <style>
+      .hidden-left {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 1s;
+      }
+      
+      .hidden-right {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 1s;
+      }
+      
+      .hidden-popup {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 1s;
+      }
+    </style>
+    
+  </noscript>
+</head>
+<body>
+  <header>
+    <div class="header-links">
+      <div class="steve-icon"><a href="../index.html"><img src="../legacy/pictures/steve.jpg" width="35px" height="35px"></a></div>
+      <nav>
+        <div class="box-outline"><a href="index.html">Home</a></div>
+        <div class="box-outline"><a href="background.html">About</a></div>
+        <div class="box-outline"><a href="veteran.html">Veteran</a></div>
+        <div class="box-outline"><a href="platform-issues.html">Issues</a></div>
+      </nav>
+      <div class="flex-column center-all" id="nav-icon" onclick="showNavLinks('block')">
+        <hr class="semi-large-border-radius nav-block">
+        <hr class="semi-large-border-radius nav-block">
+        <hr class="semi-large-border-radius nav-block">
+      </div>
+    </div>
+    <div id="nav-screen">
+      <div class="flex-column nav-screen-links-container">
+        <div class="flex-horizontal" style="width: 100%;">
+          <div style="display: flex; flex: 1;">
+            <a href="../index.html"><img src="../legacy/pictures/steve.jpg" width="50px" height="50px"></a>
+          </div>
+          <div onclick="showNavLinks('none')" >Close</div>
+        </div>
+        <div><a href="index.html">Home</a></div>
+        <div><a href="background.html">About</a></div>
+        <div><a href="veteran.html">Veteran</a></div>
+        <div><a href="platform-issues.html">Issues</a></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="center-all">
+      <div class="text-image-vertical center-all">
+        <div class="text hidden-popup">
+          <h1>Biography Information</h1>
+          <p>Steve running for President. Steve is Swedish-American who is 67 years old and is a moderate of the Democrat Party</p>
+        </div>
+        <div class="image hidden-popup">
+          <img src="../legacy/pictures/steve with podium.png" width="100%" height="100%">
+        </div>
+      </div>
+    </section>
+    <section class="center-all ">
+      <div class="flex-column" style="width: 100%; display: flex; gap: 10rem;">
+        <div class="headers center-all">
+          <h1>Background</h1>
+        </div>
+        <div class="center-all flex-column" style="width: 100%; gap: 10rem">
+          <div class="text-image flex-horizontal flex-wrap center-all">
+            <div class="image hidden-right">
+              <img src="../legacy/pictures/Town.png" width="100%" height="100%">
+            </div>
+            <div class="text text-center hidden-right">
+              <div><h2>Family</h2></div>
+              <div>
+                <p>
+                  Born and raised in a small town called Blockvannia by both parents and has a brother. Both 
+                  parents were farmers growing up and had a modest education
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="text-image flex-horizontal flex-wrap center-all">
+            <div class="video">
+              <iframe class="hidden-right" width="100%" height="100%" src="https://www.youtube.com/embed/UB7pFLDzBhM" title="farming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+              </iframe>
+            </div>
+            <div class="text text-center hidden-right">
+              <div><h2>Culture</h2></div>
+              <div><p>Came from a Swedish background where the cultural influence is moderate.</p></div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="center-all">
+      <div class="center-all text-image-vertical">
+        <div class="text hidden-popup">
+          <h1>Experience</h1>
+          <p>
+            Steve's work experience is that of a simple farmer, living life on a farm was good. Steve's political experience
+            is of none as Steve is getting involved in politics.
+          </p>
+        </div>
+        <div class="image hidden-popup">
+          <img src="../legacy/pictures/steve speaking.png" width="100%" height="100%">
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

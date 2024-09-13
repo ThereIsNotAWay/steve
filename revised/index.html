@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Steve For Presidency
+    </title>
+    <link rel="shortcut icon" type="x-icon" href="../legacy/pictures/steve.jpg">
+    <link rel="stylesheet" href="/revised/styles.css"/>
+    <script defer src="/revised/scripts.js"></script>
+    <noscript>
+      <style>
+        .fade {
+          animation: fade-in 1.25s; 
+        }
+        
+        .hidden-left {
+          opacity: 1;
+          transform: translateX(0);
+          transition: all 1s;
+        }
+        
+        .hidden-right {
+          opacity: 1;
+          transform: translateX(0);
+          transition: all 1s;
+        }
+        
+        .hidden-popup {
+          opacity: 1;
+          transform: translateY(0);
+          transition: all 1s;
+        }
+      </style>
+      
+    </noscript>
+  </head>
+  
+  <body>
+    <header>
+      <div class="header-links">
+        <div class="steve-icon"><a href="../index.html"><img src="../legacy/pictures/steve.jpg" width="35px" height="35px"></a></div>
+        <nav>
+          <div class="box-outline"><a href="index.html">Home</a></div>
+          <div class="box-outline"><a href="background.html">About</a></div>
+          <div class="box-outline"><a href="veteran.html">Veteran</a></div>
+          <div class="box-outline"><a href="platform-issues.html">Issues</a></div>
+        </nav>
+        <div class="flex-column center-all" id="nav-icon" onclick="showNavLinks('block')">
+          <hr class="semi-large-border-radius nav-block">
+          <hr class="semi-large-border-radius nav-block">
+          <hr class="semi-large-border-radius nav-block">
+        </div>
+      </div>
+      <div id="nav-screen">
+        <div class="flex-column nav-screen-links-container">
+          <div class="flex-horizontal" style="width: 100%;">
+            <div style="display: flex; flex: 1;">
+              <a href="../index.html"><img src="../legacy/pictures/steve.jpg" width="50px" height="50px"></a>
+            </div>
+            <div onclick="showNavLinks('none')" >Close</div>
+          </div>
+          <div><a href="index.html">Home</a></div>
+          <div><a href="background.html">About</a></div>
+          <div><a href="veteran.html">Veteran</a></div>
+          <div><a href="platform-issues.html">Issues</a></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="screen-section center-all" style="padding: 0px;">
+        <div class="title-page-gif-container">
+          <img src="../legacy/the one.gif" width="100%" height="100%">
+        </div>
+        <div>
+          <div class="title-page-header center-all">
+            <h1>Steve</h1>
+            <div id="vote-counter"></div>
+          </div>
+          <div class="flex-horizontal flex-wrap vote-statistics-buttons">
+            <button onclick="updateVotes(1)" class="hidden-left">Upvote</button>
+            <button onclick="updateVotes(-1)" class="hidden-right">Downvote</button>
+            <a href="statistics.html">Statistics</a>
+          </div>
+        </div>
+      </section>
+      <section class="center-all">
+        <div class="flex-column" style="width: 100%; display: flex; gap: 10rem;">
+          <div class="headers center-all">
+            <h1>A New Beginning</h1>
+          </div>
+          <div class="center-all flex-column" style="width: 100%; gap: 10rem">
+            <div class="text-image flex-horizontal flex-wrap center-all">
+              <div class="image hidden-left">
+                <video width="100%" height="100%" controls>
+                  <source src="../legacy/videos/grave rain with thunder.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="text hidden-left">
+                <div><h2>Veterans</h2></div>
+                <div><p>Our nation's fallen veterans will not be forgotten. The valiant efforts of those through the dark time will be remembered.
+                  (Credit to some tree for background of video) </p></div>
+              </div>
+            </div>
+            <div class="text-image flex-horizontal flex-wrap center-all">
+              <div class="text hidden-right">
+                <div><h2>Weapons</h2></div>
+                <div><p>In times of peace, there is no need for such arms, but in our nation's darkest times, such arms will be used in preparation.  </p></div>
+              </div>
+              <div class="image hidden-right">
+                <img src="../legacy/videos/steve's battle stance.gif">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="center-all">
+        <div class="text-image-vertical center-all">
+          <div class="text hidden-popup">
+            <h1>Fought In The 2nd Knights Conquest</h1>
+            <p>Steve fought in one of the most dangerous wars as a leader and warrior.</p>
+          </div>
+          <div class="image hidden-popup"><img src="../legacy//pictures/Knights.png" width="100%" height="100%"></div>
+        </div>
+      </section>
+      <section class="center-all">
+        <div class="center-all text-image-vertical">
+          <div class="text">
+            <h1>Mysterious Entities Battled</h1>
+            <p>On Steve's adventures to end the <em>2nd Knight's Conquest</em>, he encountered powerful foes.</p>
+          </div>
+          <div class="slideshow">
+            <div class="slideshow-container fade">
+              <img src="../legacy/pictures/Looking Glass Knight.png" class="slideshow-image">
+              <span class="slideshow-caption">Looking Glass Knight</span>
+            </div>
+            <div class="slideshow-container fade">
+              <img src="../legacy/pictures/Abyss Watcher Artorias.png" class="slideshow-image">
+              <span class="slideshow-caption">Remnant Abyss Watcher</span>
+            </div>
+            <div class="slideshow-container fade">
+              <img src="../legacy/pictures/Ignis.png" class="slideshow-image">
+              <span class="slideshow-caption">Champion Ignis</span>
+            </div>
+            <div class="slideshow-container fade">
+              <img src="../legacy/pictures/Ender Guardian.png" class="slideshow-image">
+              <span class="slideshow-caption">Ancient Ender Watcher</span>
+            </div>
+            <div>
+              <button class="slideshow-button" onclick="slideshow(-1)">←</button>
+              <button class="slideshow-button" onclick="slideshow(1)">→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
